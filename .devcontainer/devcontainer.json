@@ -1,0 +1,26 @@
+{
+	"name": "Go",
+	"image": "mcr.microsoft.com/devcontainers/go:1-1.22-bookworm",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"terminal.integrated.fontSize": 15,
+				"editor.insertSpaces": true,
+				"editor.formatOnSave": false,
+				"editor.defaultFormatter": "golang.go"
+			},
+			"extensions": [
+				"streetsidesoftware.code-spell-checker",
+				"golang.Go"
+			]
+		}
+	},
+	"forwardPorts": [9000],
+	"portsAttributes": {
+		"9000": {
+			"label": "Remote",
+			"onAutoForward": "notify"
+		}
+	},
+	"postCreateCommand": "go version"
+}
