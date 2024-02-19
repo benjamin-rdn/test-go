@@ -7,6 +7,7 @@ import (
 )
 
 func main() {
-	var message = greetings.Hello("Benjamin")
+	var message, message2 = greetings.Hello("Benjamin")
 	fmt.Println(message)
+	fmt.Println(message2)
 }
